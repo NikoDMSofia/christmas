@@ -6,11 +6,14 @@
     
 }
 
-.conteiner {
+.conteiner_ {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+}
+
+.head {
+    margin-top: 1.5em;
 }
 
 .head .video {
@@ -18,57 +21,92 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    }
-.head .video iframe, .main iframe, .footer iframe {
-    border: none;
-    
-}
-
-.main .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    column-gap: 3em;
     flex-wrap: wrap;
-    gap: 1em;
-    text-align: center;
+    row-gap: 1em;
 }
 
-.main .content {
-    width: 100%;
-    max-width: 1080em;
+.head .text {
+    width: 19em;
+    color: rgba(3, 3, 3, 0.637);
+    p {
+        font-size: 1.01em;
+        text-align: justify;
+    }
+}
+.head .video iframe {
+    border: none;  
 }
 
 
 
 
-.main h1, .head h1, .footer h1, .month {
+
+.month {
+    background-color: rgba(10, 17, 51, 0.048);
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 1.1em;
-    padding-bottom: .8em;
+    margin-bottom: 2em;
+    padding: .2em 1em .2em 1em;
+    font-style: italic;
+}
+.flex_reverse {
+    flex-direction: row-reverse;
+}
+.title_numer {
+    text-align: center;
+    margin: 5em 0 0 0;
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: rgba(110, 17, 17, 0.747);
 }
 
-.footer .video {
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.audrey {
+    height: 30vh;
+    padding: 2em 5em;
+    font-size: 1.3em;
+    text-align: center;
+   
+}
+.audrey p:nth-child(2) {
+    margin-top: 1em;
+    font-weight: 200;
+}
+.pad5 {
+    padding: .5em;
 }
 
 
 @media (max-width: 940px) {
     .conteiner_ {
-        padding: 5em;
+        padding-top: 5em;
     }
+    
     .month  {
         text-align: center;
     }
+    .audrey {
+    padding: 2em 1.5em;
+    font-size: 1.1em;
+    text-align: center;
+   
+    }
+    
+
 }
 
 @media (min-width: 940px) {
     .conteiner_ {
-        padding: 5em;
+        padding-top: 5em;
     }
+}
+
+.logo {
+    height: 20vh;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
 }
