@@ -23,6 +23,17 @@ img {
         color: whitesmoke;
         h1 {
         font-size: 3em;
+
+        font-weight: 400;
+
+        /* background: 
+        linear-gradient(90deg, rgb(156, 30, 156), rgb(36, 36, 184));
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+        padding: .5em 1em;
+
+        text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.526); */
         }
     }
 }
