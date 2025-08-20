@@ -5,11 +5,19 @@
     box-sizing: border-box;
     
 }
+.complеted {
+    background-image: url(../images/completed.png);
+    background-position: center;
+    background-size: 100%;
+    height: 100%;
+
+}
 
 .conteiner_ {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .head {
@@ -46,10 +54,11 @@
     background-color: rgba(10, 17, 51, 0.048);
     font-family: "Outfit", sans-serif;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: .9em;
     margin-bottom: 2em;
-    padding: .2em 1em .2em 1em;
+    padding: .2em 1em .2em 10em;
     font-style: italic;
+    width: 100%;
 }
 .flex_reverse {
     flex-direction: row-reverse;
@@ -78,6 +87,7 @@
 }
 
 
+
 @media (max-width: 940px) {
     .conteiner_ {
         padding-top: 5em;
@@ -85,6 +95,7 @@
     
     .month  {
         text-align: center;
+        padding: 0;
     }
     .audrey {
     padding: 2em 1.5em;

@@ -42,6 +42,25 @@ nav a {
     color: black;
 }
 
+.logoNAMEcontainer {
+    display: flex;
+    justify-content: center;
+    .logoName {
+    display: flex;
+    }
+    .logoName .ddd {
+        color: rgb(156, 30, 156);
+        font-family: "Goldman", sans-serif;
+        font-size: 1.8em;
+        letter-spacing:  -2px;
+    }
+    .logoName .ttt, .secondPpart {
+        color: rgb(36, 36, 184);
+        font-family: "Goldman", sans-serif;
+        font-size: 1.8em;
+    }
+}
+
 
 nav img {
     width: 50px;

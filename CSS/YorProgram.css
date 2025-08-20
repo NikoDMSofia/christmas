@@ -21,6 +21,12 @@ img {
     justify-content: center;
     align-items: end;
 }
+.training_container .head_title h1 {
+    font-weight: 400;
+}
+.training_container span {
+    color: rgba(0, 0, 0, 0.493);
+}
 .training_container .august_sheduel {
     margin-top: 3em;
     display: flex;
@@ -78,4 +84,14 @@ img {
 #done {
     opacity: .15;
     z-index: -1;
+}
+
+
+@media (max-width: 400px) {
+    
+    
+    .training_container .head_title h1 {
+    
+    font-size: 1.5em;
+}
 }
