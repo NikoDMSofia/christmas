@@ -29,9 +29,9 @@
     flex-direction: column;
 }
 .bonus_head .bonus_date {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 300;
-    font-style: italic;
+    color: rgba(0, 0, 0, 0.258);
 }
 .bonus_head .bonus_title {
     font-size: 1.9em;
