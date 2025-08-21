@@ -13,7 +13,7 @@ img {
 }
 
 .training_container {
-    background-color: antiquewhite;
+    background-color: rgb(215, 225, 250);
 }
 .training_container .content {
     height: 15vh;
@@ -25,7 +25,7 @@ img {
     font-weight: 400;
 }
 .training_container span {
-    color: rgba(0, 0, 0, 0.493);
+    color: rgb(183, 100, 183);
 }
 .training_container .august_sheduel {
     margin-top: 3em;
@@ -33,19 +33,18 @@ img {
     justify-content: center;
     margin-bottom: .3em;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 .training_container .august {
     width: 90%;
     height: 3em;
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color: rgba(255, 255, 255, 0.967);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .training_container .data{
-    border: .01px solid black;
+    border: .01px solid rgb(217, 205, 205);
 }
 
 .training_container .data:first-child{
@@ -58,6 +57,10 @@ img {
 }
 .playBut {
     margin-top: .3em;
+    transition: .5s;
+}
+.playBut:hover {
+    transform: scale(1.2);
 }
 .training_container  .data {
     flex: 1 1 0;
@@ -68,12 +71,14 @@ img {
     display: flex;
     font-weight: 500;
     font-size: 1.2em;
+    
 }
 .training_container .data:nth-child(2) {
     color: rgb(55, 139, 66);
 }
 #colorRed {
     color: rgb(230, 57, 57);
+    
 }
 
 .head_title {
@@ -81,17 +86,37 @@ img {
     font-family: "Outfit", sans-serif;
 }
 
-#done {
-    opacity: .15;
-    z-index: -1;
+
+.backG {
+    background-color: rgb(183, 100, 183);
+}
+.padding1px {
+    padding: 1px;
+}
+.colorW {
+    color: white;
+    p {
+    font-size: 1.1em;
+
+    }
 }
 
 
+
+
+@media (max-width: 1000px) {
+    
+    .colorW {
+        color: white;
+        p {
+        font-size: .9em;
+
+        }
+
+    }
+}
 @media (max-width: 400px) {
-    
-    
     .training_container .head_title h1 {
-    
-    font-size: 1.5em;
-}
+     font-size: 1.5em;
+    }
 }

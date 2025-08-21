@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Oswald:wght@200..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/65yo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
+    background-size: contain;
+}
+
+.bonus_head  {
+    padding-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bonus_head .bonus_head_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bonus_head .bonus_date {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-style: italic;
+}
+.bonus_head .bonus_title {
+    font-size: 1.9em;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(54, 54, 200) 
+    ,rgb(175, 42, 175) );
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+
+
+.audrey{
+    background-color: rgba(47, 0, 255, 0.398);
+    padding: 2em;
+    color: whitesmoke;
+    margin-top: 7em;
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-style: italic;
+    img {
+        width: 100px;
+    }
+    span {
+        font-size: .9em;
+        color: rgba(0, 0, 0, 0.738);
+    }
+}
+
+.dayOff_container {
+    margin-top: -5em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.damiqn {
+    margin-top: 4em;
+    text-align: center;
+    img {
+        width: 75px;
+    }
+}
+
+@media (max-width: 1000px) {
+  
+.bonus_head .bonus_date {
+    font-size: 1em;
+}
+.bonus_head .bonus_title {
+    font-size: 1.5em;
+    
+    
+    
+}
+
+
+
+.audrey{
+    font-size: 1.3em;
+    display: flex;
+    
+    
+    
+    
+}
+}
+
+@media (max-width: 650px) {
+  
+.bonus_head .bonus_title {
+    font-size: 1.3em;
+    
+}
+
+
+
+.audrey{
+    font-size: 1.2em;
+    display: flex;
+    
+    
+}
+}
