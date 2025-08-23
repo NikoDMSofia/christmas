@@ -1,17 +1,19 @@
-/* <!-- NAV BAR STARTS --> */
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
 }
-
+/* body {
+    background-color: black;
+} */
 nav {
-    background-color: white;
-    box-shadow: 3px 3px 5px rgb(201, 199, 199);
     position: fixed;
     width: 100%;
     text-align: center;
+    background-color: black;
 }
 
 nav ul {
@@ -32,14 +34,20 @@ nav li:first-child {
     margin-right: auto;
 }
 
-nav li:nth-child(8){
+nav li:nth-child(7){
     margin-left: auto;
 }
 nav a {
+    font-family: 'Montserrat', sans serif;
+    font-weight: 500;
+    color: white;
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
-    color: black;
+    transition: .5s;
+}
+nav a:hover {
+    color: red;
 }
 
 .logoNAMEcontainer {
@@ -49,13 +57,13 @@ nav a {
     display: flex;
     }
     .logoName .ddd {
-        color: rgb(156, 30, 156);
+        color: #db002c;
         font-family: "Goldman", sans-serif;
         font-size: 1.8em;
         letter-spacing:  -2px;
     }
     .logoName .ttt, .secondPpart {
-        color: rgb(36, 36, 184);
+        color: rgb(126, 126, 126);
         font-family: "Goldman", sans-serif;
         font-size: 1.8em;
     }
@@ -90,9 +98,10 @@ nav #bookAconsultationBG:hover {
     top: 0;
     right: 0;
     height: 100vh;
-    z-index: 999;
+    z-index: 9999;
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.274);
+    padding: 3em;
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -150,5 +159,18 @@ nav #bookAconsultationBG:hover {
     }
     .hide_under990 {
         display: none;
-    }
+    
 }
+nav {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+}
+
+
+/* ------------------------------------------------------- */
+
+
+
