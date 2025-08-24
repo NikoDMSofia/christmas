@@ -69,12 +69,17 @@ img {
     mask-image: url(images/download.svg);
     background-color: red;
     width: 14em;
+    z-index: -9;
    
 }
 
 
 .front-top-bottom {
     text-align: center;
+    padding: 0 0 100px;
+    h1 {
+        font-size: 3em;
+    }
 }
 
 
@@ -267,33 +272,41 @@ img {
   cursor: pointer;
   font-weight: bold;
   background: transparent;
-  position: relative;
   transition: all 1s;
   overflow: hidden;
   width: 250px;
 }
 
-.btn:hover {
-    color: white;
-}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-  left: -40px;
-  transform: skewX(45deg);
-  background-color: rgb(255, 0, 0);
-  z-index: -1;
-  transition: all 1s;
-}
-
-.btn:hover::before {
-  width: 160%;
-}
-
 .marginLeft1em {
     margin-left: 1em;
+}
+
+
+.logos{
+    padding: 1em;
+    margin: -160px 0 10em 0;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+.logos-slide {
+    display: inline-block;
+    animation: slide 20s linear infinite;
+}
+.logos-slide img  {
+    height: 15em;
+    width: 15em;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
